@@ -1,0 +1,452 @@
+/** 
+ * source: SilverStripe Black Candy Theme
+ * http://www.silverstripe.com
+ *
+ * mod themes: tdf, libobox by Christian Lohmaier and Erich Christian
+ *
+ * This typography file is included in the WYSIWYG editor and the front end. It provides
+ * a place to add link styles and font styles you would like in the CMS and the Front End.
+ */
+
+ 
+/* GENERIC STYLES 
+-------------------------------------------- */
+/* 
+.typography * {
+	font-family: Verdana, Lucida, Arial, sans-serif; 
+}
+*/
+
+/* PARAGRAPHS 
+-------------------------------------------- */
+.typography p { 
+ 	/*color: #666;*/
+ 	/*line-height: 18px; */
+ 	/*font-size: 11px; */
+	margin: 0 0 18px 0;
+}
+
+/* QUOTES
+-------------------------------------------- */
+.typography blockquote {
+	margin: 10px;
+	font-size: 1.4em;
+	color: #777;
+	font-style: italic;
+}	
+.typography q {
+	display:block;
+	font-size: 0.8em;
+	margin: 1em 1em;
+	padding: 0.5em;
+	border: 1px #ccc solid;
+}
+
+/* LINKS 
+-------------------------------------------- */
+
+.typography a { 
+ 	text-decoration: none; 
+	color: #3E91C4;
+}
+	.typography a:hover { 
+ 		text-decoration: underline;
+	}
+	
+	.typography a:visited { 
+ 		text-decoration: none;
+		color: #18A303;
+	}
+
+	
+	
+	/* LINK ICONS - shows type of file
+	------------------------------------ */
+	.typography a[href$=".pdf"],
+	.typography a[href$=".PDF"],
+	.typography a.pdf {
+		padding: 2px;
+		padding-left: 20px;
+		background: url(../images/icons/page_white_acrobat.png) no-repeat left center;
+	}
+	.typography a[href$=".doc"],
+	.typography a[href$=".DOC"],
+	.typography a.doc {
+		padding: 2px;
+		padding-left: 20px;
+		background: url(../images/icons/page_word.png) no-repeat left center;
+	}
+	.typography a[href$=".xls"],
+	.typography a[href$=".XLS"],
+	.typography a.xls {
+		padding: 2px;
+		padding-left: 20px;
+		background: url(../images/icons/page_excel.png) no-repeat left center;
+	}
+	.typography a[href$=".gz"],
+	.typography a[href$=".GZ"],
+	.typography a[href$=".gzip"],
+	.typography a[href$=".GZIP"],
+	.typography a[href$=".zip"],
+	.typography a[href$=".ZIP"],
+	.typography a[href$=".tgz"],
+	.typography a[href$=".bz2"],
+	.typography a[href$=".7z"],
+	.typography a[href$=".pkg"],	
+	.typography a[href$=".bin"],
+	.typography a[href$=".dmg"],
+	.typography a[href$=".DMG"],
+	.typography a.archive {
+		padding: 2px;
+		padding-left: 20px;
+		background: url(../images/icons/page_white_zip.png) no-repeat left center;
+	}
+	.typography a[href$=".exe"],
+	.typography a[href$=".EXE"],
+	.typography a.application {
+		padding: 2px;
+		padding-left: 20px;
+		background: url(../images/icons/application.png) no-repeat left center;
+	}
+	
+/* icons added for more mimetypes
+---------------------------------------------*/
+
+	.typography a[href^="mailto"],
+	.typography a[href^="MAILTO"],	
+	.typography a.mail {
+		padding: 2px;
+		padding-left: 20px;
+		background: url(../images/icons/mail_icon.png) no-repeat left center;
+	}	
+	
+	.typography a[href^="http"],
+	.typography a[href^="HTTP"],	
+	.typography a[href^="https"],
+	.typography a[href^="HTTPS"],
+	.typography a[href^="ftp"],
+	.typography a[href^="FTP"],
+	.typography a.urlext {
+		padding: 2px;
+		padding-left: 20px;
+		background: url(../images/icons/web_icon.png) no-repeat left center;
+	}	
+
+/*	.typography a[href$=".lch"],
+	.typography a[href$=".LCH"],
+	.typography a.applaunch {
+		padding: 2px;
+		padding-left: 20px;
+		background: url(../images/icons/application.png) no-repeat left center;
+	}   */
+
+	.typography a[href$=".txt"],
+	.typography a[href$=".TXT"],
+	.typography a[href$=".sh"],
+	.typography a[href$=".SH"],
+	.typography a.txt {
+		padding: 2px;
+		padding-left: 20px;
+		background: url(../images/icons/txt_icon.png) no-repeat left center;
+	}
+
+	.typography a[href$=".odt"],
+	.typography a[href$=".ODT"],
+	.typography a[href$=".stw"],
+	.typography a[href$=".STW"],
+	.typography a.odt {
+		padding: 2px;
+		padding-left: 20px;
+		background: url(../images/icons/writer_icon.png) no-repeat left center;
+	}
+	
+	.typography a[href$=".ott"],
+	.typography a[href$=".OTT"],
+	.typography a.ott {
+		padding: 2px;
+		padding-left: 20px;
+		background: url(../images/icons/writer_icon.png) no-repeat left center;
+	}
+	
+	.typography a[href$=".ods"],
+	.typography a[href$=".ODS"],
+	.typography a.ods {
+		padding: 2px;
+		padding-left: 20px;
+		background: url(../images/icons/calc_icon.png) no-repeat left center;
+	}		
+	
+	.typography a[href$=".ots"],
+	.typography a[href$=".OTS"],
+	.typography a.ots {
+		padding: 2px;
+		padding-left: 20px;
+		background: url(../images/icons/calc_icon.png) no-repeat left center;
+	}		
+	
+	.typography a[href$=".odp"],
+	.typography a[href$=".ODP"],
+	.typography a.odp {
+		padding: 2px;
+		padding-left: 20px;
+		background: url(../images/icons/impress_icon.png) no-repeat left center;
+	}		
+	
+	.typography a[href$=".otp"],
+	.typography a[href$=".OTP"],
+	.typography a.otp {
+		padding: 2px;
+		padding-left: 20px;
+		background: url(../images/icons/impress_icon.png) no-repeat left center;
+	}
+	
+	.typography a[href$=".odg"],
+	.typography a[href$=".ODG"],
+	.typography a.odg {
+		padding: 2px;
+		padding-left: 20px;
+		background: url(../images/icons/draw_icon.png) no-repeat left center;
+	}
+
+	.typography a[href$=".otg"],
+	.typography a[href$=".OTG"],
+	.typography a.otg {
+		padding: 2px;
+		padding-left: 20px;
+		background: url(../images/icons/draw_icon.png) no-repeat left center;
+	}
+
+	.typography a[href$=".odb"],
+	.typography a[href$=".ODB"],
+	.typography a.odb {
+		padding: 2px;
+		padding-left: 20px;
+		background: url(../images/icons/base_icon.png) no-repeat left center;
+	}
+
+	.typography a[href$=".odf"],
+	.typography a[href$=".ODF"],
+	.typography a.odf {
+		padding: 2px;
+		padding-left: 20px;
+		background: url(../images/icons/math_icon.png) no-repeat left center;
+	}
+
+	.typography a[href$=".oxt"],
+	.typography a[href$=".OXT"],
+	.typography a.oxt {
+		padding: 2px;
+		padding-left: 20px;
+		background: url(../images/icons/ext_icon.png) no-repeat left center;
+	}
+	
+	.typography a[href$=".xpi"],
+	.typography a[href$=".XPI"],
+	.typography a.xpi {
+		padding: 2px;
+		padding-left: 20px;
+		background: url(../images/icons/ext_icon.png) no-repeat left center;
+	}
+	
+/*	.typography a[href$=".dmg"],
+	.typography a[href$=".DMG"],
+	.typography a.dmg {
+		padding: 2px;
+		padding-left: 20px;
+		background: url(../images/icons/mac_icon.png) no-repeat left center;
+	}  changed to 'archive' line 97 */
+		
+	
+/* LIST STYLES 
+-------------------------------------------- */
+
+.typography ul, 
+.typography ol {
+	margin: 0 0 18px 24px;
+	/*color: #666;*/
+}
+	.typography li {
+		margin: 5px 10px;
+/*		font-size: 11px; */
+}
+		.typography li li {
+			margin: 5px 15px;
+/*			font-size: 10px; */
+}
+
+.typography li.folder {
+	background: url(../images/icons/folder_open.png) no-repeat left top;
+	margin-left: -12px;
+	padding-left: 22px;
+	list-style-type: none;
+}
+.typography li.folder li.folder {
+	background: url(../images/icons/folder_open.png) no-repeat left top;
+	margin-left: -7px;
+	padding-left: 22px;
+	list-style-type: none;
+}
+
+		
+/* HEADER STYLES 
+-------------------------------------------- */
+
+.typography h1,
+.typography h2,
+.typography h3 { 
+	/*color: #0e9cee;*/
+	margin: 0 0 18px 0;
+	font-weight: 400; 
+	/*font-family: Tahoma, Verdana, sans-serif; */
+}
+
+.typography h1 {
+	font-size: 2.5em;
+	color: #18A303;
+}
+.typography h2 { 
+ 	/*font-size: 20px; */
+	color: #18A303;
+	font-size: 2em;
+}	
+.typography h3 {
+	/*color: #222;
+	margin: 0 0 18px 0;
+	font-weight: 300;
+	clear: both;*/
+	color: #18A303;
+	font-size: 1.5em;
+}
+.typography h4 {
+	font-size: 1.2em; /*16px;*/
+	font-style: bolder;
+	width: 100%;  /*95*/
+	color: #5F5F5F;
+	/*font-weight: 300;*/
+	line-height: 20px;
+	border-bottom: 1px solid #ccc;
+	margin: 0 0 16px 0;
+}
+.typography h5 {
+	font-size: 14px;
+	color: #222;
+	font-weight: 700;
+	margin: 0 0 12px 0;
+}
+.typography h6 {
+	font-size: 13px;
+	color: #555;
+	line-height: 1.4em;
+	margin: 0 0 12px 0;
+}
+
+/* PRE STYLES 
+-------------------------------------------- */	
+.typography pre {
+	font-family:"Courier New",Courier;
+	display:block;
+	font-size:1.2em;
+	margin:2em 5em;
+	padding:0.5em;
+	border:1px #ccc solid;
+	background:#eee;;
+}
+
+/* TABLE STYLING 
+-------------------------------------------- */
+.typography table {
+	margin: 0 0 18px 0;
+	/*font-size: 11px;*/
+	/*color: #666;*/
+	border-collapse:collapse;
+}
+	.typography tr {}
+	
+		.typography td {
+		/*	border:1px solid #999; */
+			padding:5px;
+		}
+
+/* WYSIWYG EDITOR ALIGNMENT CLASSES 
+-------------------------------------------- */
+.typography .left {
+	text-align: left;
+}
+.typography .center {
+	text-align: center;
+}
+.typography .right {
+	text-align: right;
+}
+
+/* IMAGES 
+-------------------------------------------- */
+.typography img {
+	border: none;
+}
+	.typography img.right {
+		float: right;
+		margin-left: 20px;
+	}
+	.typography img.left {
+		float: left;
+	}
+	.typography img.leftAlone {
+		float: left;
+		margin-right: 100%;
+	}
+	.typography img.center {
+		float: none;
+		margin-left: auto;
+		margin-right: auto;
+		display: block;
+	}
+	
+/* nonetheless maybe useful - untested*/
+
+	.typography img.free {
+		float: none;
+		margin-left: 20px;
+		margin-right: 20px;
+	}
+
+/* OOo-additionas */
+ul.ul-libreoffice li {
+    position: relative; 
+    list-style: none;
+    margin-left: 0px;
+    background: url(../images/li-bullet-single-dark.png) no-repeat; 
+    background-position: 4px 3px;
+    padding-left: 30px;
+    display: block; 
+    color: #000;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+.typography kbd {
+	color: #000;
+	font-family: monospace;
+	background: #ddd;
+}
+#supporters td {
+    border-width: 0px;
+    vertical-align:top;
+    padding-bottom: 50px;
+}
+
+.foundationtable th {
+	font-size: 140%;
+	padding: 6px;
+	vertical-align: middle;
+	background: #eee;
+}
+.foundationtable tbody tr:first-child td  {
+	padding-top: 20px;
+}
+.foundationtable tbody tr td:first-child  {
+	padding-left: 0px;
+	padding-right: 15px;
+}
+p.roles {
+	font-variant: small-caps;
+}

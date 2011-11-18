@@ -1,0 +1,77 @@
+/* SIDEBAR  -> layout.css
+replaced with tdf SIDEBAR
+-------------------------------------- */
+#Sidebar { 
+ 	width: 100px; 
+	float: left;  
+	margin: 70px -100px 0 0;
+	padding: 0;
+}
+	#Sidebar .sidebarBox {
+		margin: 0 0 5px 0;
+		padding-bottom: 2px;
+		background: #18A303;
+/*#18A303	*/
+		/*background: #f2f2f2 url(../images/ControlElement_Tab_Complete_Default.png) no-repeat; */
+		/*background: #EFEFEF url(../images/sidebarHeader.gif) no-repeat left top;  */
+	}
+	#Sidebar ul {
+		margin: 2px 0 5px 3px;
+	}
+		#Sidebar li {
+			margin: 8px 2px;
+			list-style: none;
+		}
+	#Sidebar h3 { 
+		clear: both; 
+		text-transform: lowercase;
+		color: #fff;
+		font-weight: 700; 
+		font-size: 1em; 
+		margin: 0 0 5px 0;
+		line-height: 1.8;
+		padding: 7px 0 0 10px;
+		/*background: transparent url(../images/sidebarHeaderSub.gif) repeat-x center left; */
+	}
+	
+	#Sidebar .sidebarBottom {
+		height: 0px;
+		display: block;
+		width: 100px;
+		margin: -5px 0 0 0;
+		background: #f2f2f2;
+		/*background: #EFEFEF url(../images/sidebarBottomBg.gif) no-repeat center bottom; */
+	}
+	#Sidebar a em {
+		font-style: normal;
+	}
+	#Sidebar p {
+		font-size: 11px;
+	 	clear: both;
+	 	margin: 10px 10px 0 10px;
+	}
+	
+	
+/* obsolete LIST STYLES  -> typography.css
+--------------------------------------------*/
+.typography ul.dirlist, 
+.typography ol.dirlist {
+	margin: 0 0 18px 0;
+	color: #666;
+}
+
+	.typography li.folder{
+	margin: 0 0 18px 30px;
+}
+
+	.typography li.folder ul{
+	margin: 0 0 18px 0px;
+}
+
+	.typography li li.folder {
+	margin: 0 0 18px 40px;		
+}
+
+	.typography li li li.folder{
+	margin: 0 0 18px 50px;		
+}
