@@ -116,6 +116,8 @@ a:visited, .typography a:visited  {
 	
 .typography a[href$=".exe"],
 .typography a[href$=".EXE"],
+.typography a[href$=".msi"],
+.typography a[href$=".MSI"],
 .typography a.application {
 	padding: 2px;
 	padding-left: 20px;
